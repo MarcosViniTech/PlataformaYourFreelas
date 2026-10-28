@@ -55,6 +55,3 @@ O **YourFreelas** é uma aplicação web multipáginas desenvolvida para conecta
 ## 👨‍💻 Autor
 
 Desenvolvido por **Marcos Vinicius** (*MarcosViniTech*).
-
-- **LinkedIn:** [Seu Link do LinkedIn aqui](#)
-- **GitHub:** [Seu Link do GitHub aqui](#)
