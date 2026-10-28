@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>API de Pagamentos | YourFreelas</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#111827;
+border-bottom:1px solid #334155;
+}
+
+.logo{
+font-size:1.8rem;
+font-weight:700;
+color:#38bdf8;
+}
+
+.voltar{
+color:white;
+text-decoration:none;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+.banner{
+width:100%;
+height:400px;
+object-fit:cover;
+border-radius:20px;
+}
+
+.categoria{
+display:inline-block;
+margin-top:20px;
+background:#0ea5e9;
+padding:8px 15px;
+border-radius:30px;
+}
+
+.titulo{
+margin-top:15px;
+font-size:2.8rem;
+}
+
+.descricao{
+margin-top:20px;
+line-height:1.8;
+color:#cbd5e1;
+}
+
+.layout{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:20px;
+margin-bottom:20px;
+}
+
+.card h2{
+margin-bottom:15px;
+color:#38bdf8;
+}
+
+.card p{
+line-height:1.8;
+color:#cbd5e1;
+}
+
+.card ul{
+padding-left:20px;
+}
+
+.card li{
+margin-bottom:10px;
+}
+
+.info{
+margin-bottom:20px;
+}
+
+.info strong{
+display:block;
+margin-bottom:8px;
+}
+
+.valor{
+font-size:2rem;
+font-weight:700;
+color:#38bdf8;
+}
+
+.progress{
+width:100%;
+height:16px;
+background:#334155;
+border-radius:30px;
+overflow:hidden;
+margin-top:10px;
+}
+
+.progress-bar{
+width:67%;
+height:100%;
+background:#22c55e;
+}
+
+.btn{
+width:100%;
+padding:15px;
+border:none;
+background:#38bdf8;
+color:white;
+font-size:1rem;
+font-weight:600;
+border-radius:12px;
+cursor:pointer;
+}
+
+.btn:hover{
+opacity:.9;
+}
+
+.cliente{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.avatar{
+width:60px;
+height:60px;
+border-radius:50%;
+}
+
+@media(max-width:900px){
+
+.layout{
+grid-template-columns:1fr;
+}
+
+.banner{
+height:250px;
+}
+
+.titulo{
+font-size:2rem;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="logo">YourFreelas</div>
+
+<a href="index.html" class="voltar">
+← Voltar
+</a>
+
+</header>
+
+<div class="container">
+
+<img
+class="banner"
+src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1400"
+alt="API de Pagamentos">
+
+<div class="categoria">
+Back-End
+</div>
+
+<h1 class="titulo">
+API de Pagamentos
+</h1>
+
+<p class="descricao">
+Desenvolvimento de uma API REST para processamento de pagamentos online,
+integração com gateway financeiro e gerenciamento de transações em tempo real.
+O sistema será utilizado por um marketplace nacional com milhares de usuários.
+</p>
+
+<div class="layout">
+
+<div>
+
+<div class="card">
+
+<h2>🎯 Objetivo do Projeto</h2>
+
+<p>
+Construir uma API segura e escalável para processar pagamentos,
+consultar transações, gerar cobranças e receber notificações automáticas
+de aprovação, cancelamento e reembolso.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>📋 O que deverá ser desenvolvido</h2>
+
+<ul>
+<li>API REST completa.</li>
+<li>Integração com Stripe.</li>
+<li>Integração com PIX.</li>
+<li>Sistema de autenticação JWT.</li>
+<li>Endpoints para cobrança.</li>
+<li>Consulta de transações.</li>
+<li>Webhooks de pagamento.</li>
+<li>Logs de operações.</li>
+<li>Tratamento de erros.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>🛠 Tecnologias Necessárias</h2>
+
+<ul>
+<li>Node.js ou PHP Laravel.</li>
+<li>MySQL.</li>
+<li>JWT.</li>
+<li>REST API.</li>
+<li>GitHub.</li>
+<li>Postman.</li>
+<li>Integrações financeiras.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>✅ Requisitos</h2>
+
+<ul>
+<li>Experiência com APIs.</li>
+<li>Conhecimento em segurança.</li>
+<li>Experiência com gateways de pagamento.</li>
+<li>Portfólio técnico.</li>
+<li>Documentação da API.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📌 Como realizar o projeto</h2>
+
+<p>
+Após aprovação o freelancer receberá acesso ao ambiente de testes,
+documentação dos requisitos e credenciais sandbox.
+
+Toda funcionalidade deverá ser validada via Postman
+e acompanhada de documentação técnica explicando cada endpoint,
+parâmetros, respostas e possíveis erros.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>📚 Endpoints esperados</h2>
+
+<ul>
+<li>POST /payments</li>
+<li>GET /payments/:id</li>
+<li>POST /refunds</li>
+<li>GET /transactions</li>
+<li>POST /webhooks</li>
+<li>POST /auth/login</li>
+<li>POST /auth/refresh</li>
+</ul>
+
+</div>
+
+</div>
+
+<div>
+
+<div class="card">
+
+<div class="info">
+<strong>💰 Pagamento</strong>
+<div class="valor">
+R$ 2.500
+</div>
+</div>
+
+<div class="info">
+<strong>⏳ Prazo</strong>
+30 dias
+</div>
+
+<div class="info">
+<strong>👥 Vagas Preenchidas</strong>
+2 de 3 vagas
+</div>
+
+<div class="progress">
+<div class="progress-bar"></div>
+</div>
+
+<br>
+
+<div class="info">
+<strong>📍 Modalidade</strong>
+100% Remoto
+</div>
+
+<div class="info">
+<strong>⭐ Nível</strong>
+Pleno / Sênior
+</div>
+
+<button class="btn">
+Quero me candidatar
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>🏢 Cliente</h2>
+
+<div class="cliente">
+
+<img
+class="avatar"
+src="https://i.pravatar.cc/150?img=32"
+alt="Cliente">
+
+<div>
+<strong>PayConnect Solutions</strong>
+<p>Cliente verificado</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

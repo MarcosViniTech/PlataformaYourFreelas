@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login - YourFreelas</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.login-container{
+    width:100%;
+    max-width:420px;
+    background:#1e293b;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 20px 40px rgba(0,0,0,.3);
+}
+
+.logo{
+    text-align:center;
+    font-size:2rem;
+    font-weight:700;
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#cbd5e1;
+    margin-bottom:30px;
+}
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-size:.95rem;
+}
+
+.input-group input{
+    width:100%;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    background:#334155;
+    color:white;
+    font-size:1rem;
+}
+
+.input-group input::placeholder{
+    color:#94a3b8;
+}
+
+.btn-login{
+    width:100%;
+    border:none;
+    padding:15px;
+    border-radius:12px;
+    background:#38bdf8;
+    color:white;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-login:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(56,189,248,.3);
+}
+
+.links{
+    text-align:center;
+    margin-top:20px;
+}
+
+.links a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+.links p{
+    margin-top:10px;
+    color:#cbd5e1;
+}
+
+.back{
+    display:block;
+    text-align:center;
+    margin-top:25px;
+    color:#94a3b8;
+    text-decoration:none;
+}
+
+.back:hover{
+    color:white;
+}
+
+.msg{
+    display:none;
+    margin-top:15px;
+    padding:12px;
+    border-radius:10px;
+    background:#22c55e;
+    text-align:center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="login-container">
+
+    <div class="logo">YourFreelas</div>
+
+    <div class="subtitle">
+        Entre na sua conta
+    </div>
+
+    <form id="loginForm">
+
+        <div class="input-group">
+            <label>E-mail</label>
+            <input
+                type="email"
+                placeholder="Digite seu e-mail"
+                required
+            >
+        </div>
+
+        <div class="input-group">
+            <label>Senha</label>
+            <input
+                type="password"
+                placeholder="Digite sua senha"
+                required
+            >
+        </div>
+
+        <button type="submit" class="btn-login">
+            Entrar
+        </button>
+
+        <div class="msg" id="msg">
+            Login realizado com sucesso!
+        </div>
+
+    </form>
+
+    <div class="links">
+        <a href="#">Esqueceu sua senha?</a>
+
+        <p>
+            Não possui conta?
+            <a href="#">Criar conta</a>
+        </p>
+    </div>
+
+    <a href="index.html" class="back">
+        ← Voltar para o início
+    </a>
+
+</div>
+
+<script>
+
+const form = document.getElementById("loginForm");
+const msg = document.getElementById("msg");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    msg.style.display = "block";
+
+    setTimeout(() => {
+        window.location.href = "index.html";
+    }, 1500);
+
+});
+
+</script>
+
+</body>
+</html>
